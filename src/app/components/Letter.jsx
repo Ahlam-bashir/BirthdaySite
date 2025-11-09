@@ -11,17 +11,23 @@ export default function Letter() {
     const [currentText, setCurrentText] = useState("")
     const [showCursor, setShowCursor] = useState(true)
 
-    const letterText = `My Dearest Madam Jii,
+    const letterText = `My Dearest Angry Man,
 
-On this very special day, I want you to know how incredibly grateful I am to have you in my life. Your birthday isn't just a celebration of another year - it's a celebration of all the joy, laughter, and beautiful memories you bring to this world.
+On this very special day, I want you to know how incredibly grateful I am to have you in my life. I know you’re not always happy about that 😏, but I’m pretty sure I was born to annoy you for life — so you better get used to it.
 
-You have this amazing ability to light up any room you enter, to make people smile even on their darkest days, and to spread kindness wherever you go. Your heart is pure gold, and your spirit is absolutely infectious.
+Your birthday isn’t just about celebrating another year; it’s about celebrating all the joy, laughter, and unforgettable memories you bring to this world. You have this amazing gift of making me laugh even when I’m angry, and somehow, every time I see you, my eyes light up. You can make anyone smile on their darkest days, and your heart is pure — though unfortunately, you don’t seem to keep much of that purity for me.
 
-Thank you for being the wonderful, amazing, absolutely fantastic person that you are. The world is so much brighter because you're in it.
+Even when you’ve hurt me or made me cry, I can’t stay upset. My heart just doesn’t work that way with you. I think you’re like an innocent child — stubborn, unpredictable, but somehow impossible not to love. On your special day, I don’t want to ruin your mood. I just want you to spread kindness and happiness wherever you go, keep smiling that beautiful smile, and trust that everything will eventually fall into place.
+
+Always remember — you were never truly away from me. Even in the days when we weren’t together, you were in my thoughts every single moment. I don’t know how you’ve managed to capture my heart like this. Despite our differences, I can’t unlove you. My heart never gets tired of thinking about you, and I’ll always treasure our best memories.
+
+I love you to infinity. Keep shining, chase your dreams, and I know you’ll achieve something amazing very soon.The world is brighter because you’re in it.
+
+Atlast Baar baar ye din aaye baar baar ye dil gaaye tum jiyo hazaaro saal hai meri ye aarzuu happy Birthday to you happy birthday to you
 
 Happy Birthday, beautiful soul! 🎂✨
 
-With all my love and warmest wishes,
+With all my love,
 Forever Yours 💕`
 
     useEffect(() => {

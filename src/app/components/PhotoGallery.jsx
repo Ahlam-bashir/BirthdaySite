@@ -3,7 +3,7 @@
 import { motion } from "motion/react"
 import { Camera, ArrowRight } from "lucide-react"
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCube, Pagination } from 'swiper/modules'
+import { EffectCube, Pagination, Autoplay } from 'swiper/modules' // ✅ Added Autoplay
 import 'swiper/css'
 import 'swiper/css/effect-cube'
 import 'swiper/css/pagination'
@@ -11,8 +11,9 @@ import 'swiper/css/pagination'
 export default function PhotoGallery({ onNext }) {
 
     const photos = [
-        { id: 1, src: "/images/1.jpg" },
-        { id: 2, src: "/images/2.jpg" },
+        { id: 1, src: "/images/12.jpeg" },
+        { id: 2, src: "/images/122.jpeg" },
+          { id: 3, src: "/images/uu.jpeg" },
     ]
 
     return (
@@ -41,9 +42,9 @@ export default function PhotoGallery({ onNext }) {
                 </motion.div>
 
                 <h1 className="text-4xl md:text-6xl py-1 md:py-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 mb-6">
-                Moments with You 
+                  Happy Birthday Love 
                 </h1>
-                <p className="text-xl text-purple-300">Beautiful moments with Madam Jii 📸</p>
+                <p className="text-xl text-purple-300">You look Amazing in every  Picture 📸</p>
             </motion.div>
 
             {/* Cube Gallery */}
@@ -58,8 +59,12 @@ export default function PhotoGallery({ onNext }) {
                         shadowScale: 0.94,
                     }}
                     pagination={true}
-                    modules={[EffectCube, Pagination]}
-                    className="mySwiper h-[350px] md:h-[450px]" // adjust height as needed
+                    autoplay={{
+                        delay: 3000, // 3 seconds
+                        disableOnInteraction: false, // keep auto-slide after interaction
+                    }}
+                    modules={[EffectCube, Pagination, Autoplay]} // ✅ Added Autoplay here
+                    className="mySwiper h-[350px] md:h-[450px]"
                 >
                     {photos.map((photo, index) => (
                         <SwiperSlide key={photo.id}>

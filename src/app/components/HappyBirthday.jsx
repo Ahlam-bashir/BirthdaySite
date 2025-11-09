@@ -189,6 +189,9 @@ export default function HappyBirthday({ onNext }) {
             })}
 
 
+<audio loop autoPlay>
+  <source src="/music/happy-birthday.mp3" type="audio/mpeg" />
+</audio>
             <motion.div
                 className="text-center mb-8 relative z-10"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -220,7 +223,7 @@ export default function HappyBirthday({ onNext }) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.3 }}
                 >
-                    Madam Jii<span className="text-white">💕</span>
+                    Love<span className="text-white">💕</span>
                 </motion.h2>
 
                 <motion.div

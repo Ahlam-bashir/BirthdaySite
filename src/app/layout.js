@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Happy Birthday!",
+  title: "Happy Birthday Umat!",
   description: "An animated birthday surprise filled with emotions, words from the heart, and a letter that types itself — just for you."
 };
 

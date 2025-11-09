@@ -14,7 +14,7 @@ export default function BirthdayApp() {
   const [currentScreen, setCurrentScreen] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
 
-  const birthdayDate = new Date("2025-07-16T00:00:00")
+  const birthdayDate = new Date("2025-08-17T00:00:00")
   const [isBirthdayOver, setisBirthdayOver] = useState(new Date().getTime() >= birthdayDate.getTime())
 
   useEffect(() => {
@@ -65,7 +65,7 @@ export default function BirthdayApp() {
           delay: 1,
         }}
         className="fixed bottom-4 right-4 text-[13px] text-white/40 pointer-events-none z-50 font-light">
-        @anujbuilds
+        @
       </motion.div>
     </div>
   )
